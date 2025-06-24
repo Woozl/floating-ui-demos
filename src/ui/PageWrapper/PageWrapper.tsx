@@ -18,7 +18,9 @@ export function PageWrapper({ children }: PageWrapperProps) {
           </Link>
         </ul>
       </nav>
-      <main className={styles.contentContainer}>{children}</main>
+      <main className={styles.contentContainer}>
+        <div className={styles.resizableContainer}>{children}</div>
+      </main>
     </div>
   );
 }
